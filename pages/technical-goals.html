@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Technical&nbsp;Goals</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">NiceBSD </a></h1>
+                <nav><ul>
+                    <li><a href="/pages/culture.html">Culture</a></li>
+                    <li class="active"><a href="/pages/technical-goals.html">Technical&nbsp;Goals</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+    <h1 class="entry-title">Technical&nbsp;Goals</h1>
+    
+    <div class="section" id="design-requirements">
+<h2>Design&nbsp;requirements</h2>
+<div class="section" id="full-rebuild-should-take-less-than-10-minutes-on-modest-hardware">
+<h3>Full rebuild should take less than 10 minutes on modest&nbsp;hardware</h3>
+<p>Slow compilation leads to slow development. The tools necessary to do this
+exist, but we aren’t using them yet. It’s much easier to test deep and
+wide-ranging bugs when a system build takes the time to make a pot of&nbsp;coffee.</p>
+</div>
+<div class="section" id="million-loc-limit-excluding-hardware-drivers-for-full-system">
+<h3>1 million <span class="caps">LOC</span> limit (excluding hardware drivers) for full&nbsp;system</h3>
+<p>It should be possible for a reasonably dedicated person to audit the entire
+base system in under 2 years, assuming 2,000 <span class="caps">LOC</span>/day (500&nbsp;days)</p>
+</div>
+<div class="section" id="code-should-allow-for-reuse-outside-of-nicebsd">
+<h3>Code should allow for reuse outside of&nbsp;NiceBSD</h3>
+<p>While NiceBSD should be a usable system, the aim is to &quot;raise all ships&quot; with
+its&nbsp;codebase.</p>
+</div>
+</div>
+<div class="section" id="loose-roadmap">
+<h2>Loose&nbsp;Roadmap</h2>
+<div class="section" id="start-with-freebsd-codebase">
+<h3>Start with FreeBSD&nbsp;codebase</h3>
+<p>We’ll want to start with a working codebase, so that off the bat the system is
+usable. While NiceBSD aims to be a test bed for new approaches to systems
+programming, it should be useful, able to bootstrap itself,&nbsp;&quot;production-ready&quot;</p>
+</div>
+<div class="section" id="port-core-userland-code-to-go">
+<h3>Port core userland code to&nbsp;Go</h3>
+<p>In order to have the succinctness and compilation speed requirements, we have
+to look beyond a world written in C code. Yes, C is a lingua franca, but the
+cost for its speed is simply too high given the alternatives. Given the
+increase in speed of processors since 1972, and the rise of multiprocessor
+systems, this isn’t as ridiculous proposal as one may&nbsp;think</p>
+</div>
+<div class="section" id="replace-gnu-code-with-bsd-alternatives-full-bsd-mit-public-domain-codebase">
+<h3>Replace <span class="caps">GNU</span> code with <span class="caps">BSD</span> alternatives (full <span class="caps">BSD</span>/<span class="caps">MIT</span>/Public Domain&nbsp;codebase)</h3>
+<p>In order to &quot;raise all ships&quot;, the code should allow for simple inclusion in
+other systems and projects. A <span class="caps">BSD</span>/<span class="caps">MIT</span>/<span class="caps">PD</span> license allows for this, with minimal
+headaches&nbsp;downstream.</p>
+</div>
+</div>
+
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                            <li><a href="http://openbsd.org/">OpenBSD</a></li>
+                            <li><a href="https://netbsd.org/">NetBSD</a></li>
+                            <li><a href="https://freebsd.org/">FreeBSD</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
