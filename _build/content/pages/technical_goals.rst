@@ -43,9 +43,10 @@ cost for its speed is simply too high given the alternatives. Given the
 increase in speed of processors since 1972, and the rise of multiprocessor
 systems, this isn’t as ridiculous proposal as one may think
 
-Replace GNU code with BSD alternatives (full BSD/MIT/Public Domain codebase)
-----------------------------------------------------------------------------
+Full BSD/MIT/Public Domain codebase
+-----------------------------------
 
 In order to "raise all ships", the code should allow for simple inclusion in
 other systems and projects. A BSD/MIT/PD license allows for this, with minimal
-headaches downstream.
+headaches downstream. Any software with GPL or other restrictive licenses
+should be replaced.
